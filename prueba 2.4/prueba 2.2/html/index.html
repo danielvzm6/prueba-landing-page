@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var subscriptionForm = document.getElementById('subscription-form-data');
+    
+            subscriptionForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                subscriptionForm.reset(); 
+                var hiddenForm = document.getElementById('subscription-form');
+                hiddenForm.style.display = 'none'; 
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="#" class="logo">[C&D]</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#us">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>  
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="header-txt">
+                <h1>¡Llego tu momento! Todo lo que<br> Necesitas para tu motocicleta
+                    <br>en un solo lugar</h1>
+                <p>
+                    Que esta temporada de invierno no te pille desprevenido, asegúrate con nuestros accesorios!
+                </p>
+            </div>
+            <div class="button-dscto">
+                <a href="#subscription-form" class="btn">Obten un descuento de bienvenida</a>
+            </div>
+            
+            <div id="subscription-form" class="hidden-form">
+                <h2>Inserta tus datos para recibir un 20% de descuento en tu primera compra!</h2>
+                <form action="#" method="post">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                    <input type="text" placeholder="Dirección">
+                    <input type="text" placeholder="Teléfono">
+                    <input type="email" placeholder="Correo electrónico">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="about-us" id="us">
+            <div class="container-img">
+                <img src="../imagenes/foto-moto-actualizada.png" class="about-us-image">
+            </div>
+            <div class="about-us-text">
+                <h1>Sobre nosotros</h1>
+                <p>En CyD accesorios entendemos la pasión que hay detrás de cada motocicleta y la importancia de mantenerla en perfecto estado.
+                     Fundada en el vibrante año de 2020 por Daniel Zuñiga, somos una empresa familiar arraigada en la devoción por las dos ruedas y 
+                     la búsqueda constante de calidad en cada producto que ofrecemos.</p>
+                <br>
+                <p>Nuestra visión es seguir creciendo y expandiendo nuestro alcance, manteniendo siempre nuestros valores fundamentales de integridad, calidad y pasión por las motocicletas.
+                     Nos emociona continuar sirviendo a nuestra comunidad de amantes de las dos ruedas y seguir siendo el destino preferido para todos sus accesorios y repuestos.  
+                     No solo vendemos productos; compartimos tu pasión por las motocicletas y nos comprometemos a acompañarte en cada viaje.  
+                     ¡Únete a nosotros y haz que cada viaje sea inolvidable!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>¡Síguenos en nuestras redes sociales!</p>
+        <div class="social">
+            <a href="#"><img src="../imagenes/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../imagenes/x.png" alt="Twitter"></a>
+            <a href="#"><img src="../imagenes/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>Dirección: Av Las Condes #245, Las Condes, Chile | Teléfono: +569 78486654 | Correo: cydequipamiento@ventas.com</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+.container {
+    width: auto;
+    height: 100vh;
+    background-image: url('../imagenes/logo.jpg');
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 35px;
+    background-color: black;
+    align-items: center;
+}
+
+.logo {
+    color: #ee13c4;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.navbar ul li a{
+    color: #ffffff;
+}
+
+.navbar ul li a:hover {
+    color: #ee13c4;
+}
+
+
+.header-content {
+    display: flex;
+    margin-top: 150px;
+}
+
+.header-txt {
+    padding-right: 120px;
+    height: 300px;
+}
+
+.header-txt h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+
+.header-txt p {
+    font-size: 20px;
+    color: #c1c1c1;
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.button-dscto {
+    text-align: right;
+    padding: 60px 120px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background: linear-gradient(
+        90deg,
+        rgba(244,77,243,1) 0%,
+        rgba(225,0,182,1) 100%
+    );
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hidden-form {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.hidden-form h2 {
+    margin-bottom: 10px;
+}
+
+.hidden-form input,
+.hidden-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(-100%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background: linear-gradient(
+        90deg,
+        rgba(244,77,243,1) 0%,
+        rgba(225,0,182,1) 100%
+    );
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#subscription-form:target {
+    display: block;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 18px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #ee13c4;
+}
+
+.footer .social {
+    margin-top: 20px;
+}
+
+.footer .social a {
+    margin: 0 10px;
+}
+
+.footer .social img {
+    width: 30px;
+    height: 30px;
+}
+
+.about-us {
+    background-color: rgb(45,46,48);
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.about-us-image {
+    width: 800px;
+    margin: 250px 35px;
+}
+
+.about-us-text {
+    padding: 200px 60px;
+}
+
+.about-us-text h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-us-text p {
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    .header-txt h1 {
+        font-size: 50px;
+    }
+
+    .header-txt {
+        padding: 0;
+    }
+
+    .container {
+        background-image: none;
+        background-color: rgb(77, 81, 83);
+        text-align-last: center;
+    }
+
+    .container-img {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        background-position: center;
+    }
+    .header-content {
+        margin-top: 150px;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px)  and (max-width: 1400px) {
+
+    .container-img {
+        display: none;
+    }
+}
